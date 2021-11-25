@@ -5,7 +5,6 @@ import UsegetService from '../../hooks/UsegetService'
 import Filter from '../../component/Filter/Filter'
 import Usetitle from '../../hooks/Usetitle'
 
-
 const Home =()=>{
 
   const {products,setProducts,preproduct,setProduct,setPage} = UsegetService()
