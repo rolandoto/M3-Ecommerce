@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import  {Router}  from '@reach/router'
+import Home from './page/Home/Home';
+import Header from './component/Header/Header';
+import Cart from './page/Cart/Cart';
+import { UseContextProvider } from './Context/UseContext';
+import Section from './component/Section/Section';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+      <div> 
+        <UseContextProvider>
+          <Header />
+            <Router>
+                <Home path='/' />
+                <Cart path='/Cart' />
+            </Router>
+            <Section />
+         </UseContextProvider>
+      </div>
+    );
 }
 
 export default App;
