@@ -40,7 +40,7 @@ const UseFilter =({setProducts,preproduct}) =>{
 
     return {
             handchangeColor:e => filtrar(e.target.value),
-            handchangeSize: e => filtrar(e.target.value),
+            handchangeSize: e => filtrar(e),
             handchangePrice:e => sizePrice(e.target.value)
             }
 

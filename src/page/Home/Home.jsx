@@ -19,7 +19,7 @@ const Home =()=>{
     
     if(!products  ) return null
     return (
-      <div>
+      <div >
         <div className='container-Home'>
               <Filter
                       setProducts={setProducts} 
@@ -27,7 +27,7 @@ const Home =()=>{
                       setProduct={setProduct}
                        />
               <Container>
-                  <Showproduct  product={products} />  
+                  <Showproduct  products={products} />  
                       <div className='container-botton'>
                           {products.length>0 && (
                             <button className='botton-max' onClick={handNext}>CARGAR MAS</button>               

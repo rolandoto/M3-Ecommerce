@@ -2,11 +2,12 @@ import React from "react";
 import Card from "../Card/Card";
 
 
-const Showproduct =({product}) =>{
+const Showproduct =({products}) =>{
+    
     return (
         <div>
             <div className='ShowProducts'>
-                {product.map(prev=> (
+                {products.map(prev=> (
                     <Card key={prev.id} productAll={prev} />
                 ))}
             </div>

@@ -9,6 +9,7 @@ export const UseContextProvider =({children}) => {
         cart:[]
     }
 
+    
     const [carts,setCart] =useState(state)
 
     return <Context.Provider 

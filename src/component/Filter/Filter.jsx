@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import UseFilter from '../../hooks/UseFilter'
 
-const  COLOR = ['Cinza','Preto','Laranja','Branco','Amarelo','Rosa']
+const COLOR = ['Cinza','Preto','Laranja','Branco','Amarelo','Rosa']
 const SIZE =['M','G','GG','U','M','P']
 const PRICE =[50,90,160,250,1]
 
@@ -18,7 +18,7 @@ const Filter =({setProducts,preproduct})=>{
                       {COLOR.map(fil =>   (
                         <div className='container-color'>
                             <ul>
-                                <li>
+                                <li>    
                                     <label key={fil}><input type="checkbox" name='are' value={fil} onChange={handchangeColor}  /></label> 
                                     <div className='flex-color'>
                                         <p>{fil} </p>
@@ -29,16 +29,13 @@ const Filter =({setProducts,preproduct})=>{
                     ))}
                    </div>
 
-                    <div>
+                    <div className='flex-filter'>
                       <span>TAMAÑOS</span>
                       {SIZE.map(fil => (
                           <div className='container-color'>
-                                <ul>
+                                  <ul>
                                     <li>
-                                        <label key={fil}><input type="checkbox" name='are' value={fil} onChange={handchangeSize}  /></label> 
-                                        <div className='flex-color'>
-                                            <p>{fil} </p>
-                                        </div>
+                                        <button className='button-filter' onClick={()=> handchangeSize(fil)} >{fil}</button>
                                     </li>
                                 </ul>
                           </div>
@@ -53,7 +50,7 @@ const Filter =({setProducts,preproduct})=>{
                                 <li>
                                     <label key={fil}><input type="checkbox" name='are' value={fil} onChange={handchangePrice}  /></label> 
                                     <div className='flex-color'>
-                                            <p>{fil} </p>
+                                            <p> apartir ${fil} </p>
                                      </div>
                                 </li>
                             </ul>
