@@ -8,7 +8,7 @@ const UseCart =() =>{
     const {cart} = carts
 
     const handCart =(event)=>{
-        const CartDiferent = cart.find(index => index.id ==event.id)
+        const CartDiferent = cart.find(index => index.id ===event.id)
             if(CartDiferent){
                 CartDiferent.quantity +=1   
                 CartDiferent.price+=CartDiferent.price

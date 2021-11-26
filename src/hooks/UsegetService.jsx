@@ -19,7 +19,7 @@ const UsegetService =() =>{
 
     useEffect(()=> {
         setLoading(true)
-        if(page ==INITIAL)return
+        if(page ===INITIAL)return
               Service({page}).then(index =>{
                 setProduct(pre => pre.concat(index))
                 setProducts(pre => pre.concat(index))

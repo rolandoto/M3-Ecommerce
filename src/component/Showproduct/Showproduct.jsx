@@ -7,8 +7,8 @@ const Showproduct =({products}) =>{
     return (
         <div>
             <div className='ShowProducts'>
-                {products.map(prev=> (
-                    <Card key={prev.id} productAll={prev} />
+                {products.map((prev ,index)=> (
+                    <Card key={index} productAll={prev} />
                 ))}
             </div>
         </div>

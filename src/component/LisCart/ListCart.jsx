@@ -3,7 +3,7 @@ import Price from "../Price/Price";
 
 const LisCart =({index,handDeleCart}) =>{
     return ( 
-            <div key={index.id}>
+            <div >
                 <div className='CartPage-item' >
                 <div className='CartPage-itemInfo'>
                 <img className='CartPage-itemImage' src={index.image}   />
@@ -18,7 +18,7 @@ const LisCart =({index,handDeleCart}) =>{
                     
                     </div>
                     
-                </div>
+                    </div>
                 </div>    
                 
                 

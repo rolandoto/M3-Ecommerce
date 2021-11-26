@@ -3,7 +3,7 @@
 const UseFilter =({setProducts,preproduct}) =>{
     //filtrar 
     const filtrar=(terminoBusqueda)=>{
-    let resultadosBusqueda=preproduct.filter((elemento)=>{
+    let resultadosBusqueda= preproduct.filter((elemento)=>{
         if(elemento.name.toString().toLowerCase().includes(terminoBusqueda.toLowerCase())
         || elemento.color.toString().toLowerCase().includes(terminoBusqueda.toLowerCase())
         || elemento.price.toString().toLowerCase().includes(terminoBusqueda.toLowerCase())

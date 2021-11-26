@@ -15,11 +15,11 @@ const Filter =({setProducts,preproduct})=>{
                    <h1>Blusas</h1>
                   <div>  
                       <span>COLORES</span>
-                      {COLOR.map(fil =>   (
+                      {COLOR.map((fil,index) =>   (
                         <div className='container-color'>
-                            <ul>
-                                <li>    
-                                    <label key={fil}><input type="checkbox" name='are' value={fil} onChange={handchangeColor}  /></label> 
+                            <ul >
+                                <li key={index}>    
+                                    <label ><input type="checkbox" name='are' value={fil} onChange={handchangeColor}  /></label> 
                                     <div className='flex-color'>
                                         <p>{fil} </p>
                                     </div>
@@ -31,10 +31,10 @@ const Filter =({setProducts,preproduct})=>{
 
                     <div className='flex-filter'>
                       <span>TAMAÑOS</span>
-                      {SIZE.map(fil => (
+                      {SIZE.map((fil,index) => (
                           <div className='container-color'>
                                   <ul>
-                                    <li>
+                                    <li  key={index}>
                                         <button className='button-filter' onClick={()=> handchangeSize(fil)} >{fil}</button>
                                     </li>
                                 </ul>
@@ -44,11 +44,11 @@ const Filter =({setProducts,preproduct})=>{
 
                  <div>
                   <span>PRECIO</span>
-                    {PRICE.map(fil => (
+                    {PRICE.map((fil,index) => (
                         <div className='container-color'>
-                            <ul>
-                                <li>
-                                    <label key={fil}><input type="checkbox" name='are' value={fil} onChange={handchangePrice}  /></label> 
+                            <ul >
+                                <li key={index}>
+                                    <label ><input type="checkbox" name='are' value={fil} onChange={handchangePrice}  /></label> 
                                     <div className='flex-color'>
                                             <p> apartir ${fil} </p>
                                      </div>

@@ -14,13 +14,13 @@ const Cart =() =>{
     Usetitle({title:'Cart'})
     const {handDeleCart,totalPrice} = UseCart()
     
-    if(cart.length ==0) return <EmpyCart />  
+    if(cart.length ===0) return <EmpyCart />  
    
         return (
                 <Container>
                     <h2  className='Subtitle'>Subtotal $ {totalPrice} </h2>
                     {cart.map(index => (
-                    <LisCart    index={index} handDeleCart={handDeleCart} />
+                    <LisCart    index={index} key={index.id}  handDeleCart={handDeleCart} />
                     ))}
                 </Container>
             )
