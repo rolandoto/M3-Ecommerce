@@ -8,6 +8,7 @@ const UseCart =() =>{
     const {cart} = carts
 
     const handCart =(event)=>{
+        alert('producto agregado')
         const CartDiferent = cart.find(index => index.id ===event.id)
             if(CartDiferent){
                 CartDiferent.quantity +=1   

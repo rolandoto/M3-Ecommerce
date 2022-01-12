@@ -397,10 +397,7 @@ img {
     justify-content: initial;
     width: 70%;
   }
-
-
 .button-filter {
-
    cursor: pointer;
     -webkit-appearance: button;
     background: #ffffff;
@@ -423,3 +420,36 @@ img {
   color: rgb(0, 0, 0);
 
   }
+
+  @media (max-width: 600px) {
+  .Container-filter {
+    display: none;
+  }
+
+  .ShowProducts {
+   
+    grid-template-columns: 1fr 1fr ;
+  
+
+  }  
+} 
+
+.span-letra {
+ display: block;
+    font-family: monospace;
+    white-space: nowrap;
+    border-right: 9px solid;
+    width: 20ch;
+    animation: typing 10s infinite  steps(19), blink .5s infinite step-end alternate;
+    overflow: scroll  ;
+    font-size: 100px;
+}
+
+@keyframes typing {
+  from {width: 0;}
+  from {height: 100PX;}
+}
+
+@keyframes blink {
+  100% {border-color: transparent;}
+}
