@@ -18,7 +18,7 @@ const Filter =({setProducts,preproduct})=>{
                       {COLOR.map((fil,index) =>   (
                         <div className='container-color'>
                             <ul >
-                                <li key={index}>    
+                                <li key={index.toString()}>    
                                     <label ><input type="checkbox" name='are' value={fil} onChange={handchangeColor}  /></label> 
                                     <div className='flex-color'>
                                         <p>{fil} </p>
@@ -34,7 +34,7 @@ const Filter =({setProducts,preproduct})=>{
                       {SIZE.map((fil,index) => (
                           <div className='container-color'>
                                   <ul>
-                                    <li  key={index}>
+                                    <li  key={index.toString()}>
                                         <button className='button-filter' onClick={()=> handchangeSize(fil)} >{fil}</button>
                                     </li>
                                 </ul>
@@ -47,9 +47,9 @@ const Filter =({setProducts,preproduct})=>{
                     {PRICE.map((fil,index) => (
                         <div className='container-color'>
                             <ul >
-                                <li key={index}>
+                                <li key={index.toString()}>
                                     <label ><input type="checkbox" name='are' value={fil} onChange={handchangePrice}  /></label> 
-                                    <div className='flex-color'>
+                                     <div className='flex-color'>
                                             <p> apartir ${fil} </p>
                                      </div>
                                 </li>

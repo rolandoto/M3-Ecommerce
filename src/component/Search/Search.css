@@ -1,0 +1,25 @@
+.section-Search{
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    max-width: 100%;
+    
+}
+.input-search {
+    text-align: center;
+}
+
+.flex-input {
+    font-size: 20px;
+    width: 28%;
+}
+
+.border-search {
+    margin: auto;
+    box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+    width: 376px;
+    background: white;
+    text-align: initial;
+}
+
+   

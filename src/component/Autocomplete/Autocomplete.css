@@ -1,0 +1,28 @@
+
+
+ul li {
+    list-style: none;
+}
+
+.flex-Autocomplete img  {
+        width: 60px;
+        cursor: pointer;
+    -webkit-appearance: button;
+    box-shadow: 0 0.2rem 0.5rem 0 rgb(213 217 217 / 50%);
+    align-items: flex-end;
+    font-size: 16px;
+    width: 20%;
+    color: white;
+    font-weight: 700;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.flex- {
+        display: inline-block;
+}
