@@ -20,7 +20,7 @@ const  Search = (props) => {
       sourceId: 'offers-next-api',
       getItems: ({ query }) => {
         if (!!query) {
-          return fetch(`http://localhost:3000/products?q=${query}`)
+          return fetch(`https://api-m3-ecommerce.herokuapp.com/products?q=${query}`)
             .then(res => res.json())
             .then(data => data)
         }
