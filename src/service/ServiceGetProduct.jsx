@@ -12,7 +12,7 @@ const fromServiceUnica =(prevent) =>{
 
 const ProductService =({id})=> {
     
-    const url =`http://localhost:3000/products/${id}`
+    const url =`https://api-m3-ecommerce.herokuapp.com/products/${id}`
     return fetch(url)
     .then(resp => resp.json())
     .then(fromServiceUnica)
