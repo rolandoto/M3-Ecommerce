@@ -19,7 +19,7 @@ const fromGetservice =(prevent) =>{
 
 const Service =({page}={})=> {
     
-    const url =`https://siscomited-mern.herokuapp.com/products?_limit=9&_page=${page *1}`
+    const url =`https://api-m3-ecommerce.herokuapp.com/products?_limit=9&_page=${page *1}`
     return fetch(url)
     .then(resp => resp.json())
     .then(fromGetservice)
